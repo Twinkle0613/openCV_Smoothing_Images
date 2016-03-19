@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( CV_Smoothing_Images )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( CV_Smoothing_Images Smoothing.cpp )
+target_link_libraries( CV_Smoothing_Images ${OpenCV_LIBS} )
